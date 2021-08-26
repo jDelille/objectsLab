@@ -300,9 +300,9 @@ const colors = {
 
 //Code Here 
 
+let {...colorsCopy} = colors;
 
-
-
+console.log(colorsCopy);
 
 
 
@@ -333,6 +333,10 @@ const shippingInfo = {
 //Code Here
 
 
+let helensInfo = {...contactInfo, ...shippingInfo};
+console.log(helensInfo);
+
+
 //Print helensInfo to see what it looks like, there should be no repeating properties.
 
 
@@ -349,6 +353,23 @@ const shippingInfo = {
 */
 
 //Code Here 
+
+class Vehicle {
+  contstructor(capacity, color, mileage) {
+    this.capacity = capacity;
+    this.color = color;
+    this.mileage = mileage;
+  }
+
+  move(miles) {
+    this.miles += miles;
+  }
+}
+
+
+
+
+
 
 
 /*
@@ -421,3 +442,4 @@ const shippingInfo = {
 */
 
 //Code Here
+
