@@ -6,6 +6,13 @@
 
 //Code here
 
+let me = {
+  name: 'justin',
+  age: 23
+}
+
+
+
 
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
@@ -17,6 +24,18 @@
 
 //Code here
 
+let dog = {
+  name: 'Clifford',
+  color: 'Red',
+  age: 1,
+  goodBoy: true
+}
+
+console.log(dog);
+
+
+
+
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
@@ -24,6 +43,7 @@
 
 //Code here
 
+console.log(dog.name);
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
@@ -31,6 +51,7 @@
 
 //Code here
 
+console.log(dog['color']);
 
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
@@ -41,12 +62,27 @@
 
 //Code here
 
+let favoriteThings = {
+  band: 'Tenacious D',
+  food: 'Pizza',
+  person: "Jack Black",
+  book: "Goosebumps",
+  movie: "School of Rock",
+  holiday: "Jack Black Day"
+}
+
 
 /*
-  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
+  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car 
+  and then another key named 'brand' with the value being your favorite brand.
 */
 
 //Code here
+
+favoriteThings.car = "Saab 9-5"
+favoriteThings.brand = "Nike"
+
+
 
 
 /*
@@ -55,6 +91,10 @@
 */
 
 //Code here
+
+favoriteThings.food = 'chicken nuggets'
+favoriteThings.book = "Harry Potter"
+
 
 
 
@@ -78,6 +118,10 @@ var user = {
 
 //Code Here
 
+user.name = 'Bryan G. Smith'
+user.email = 'bryan.smith@devmounta.in'
+
+
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 /*
@@ -85,6 +129,9 @@ var user = {
 */
 
 //Code Here
+
+delete user.age
+
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
@@ -95,6 +142,27 @@ var user = {
 */
 
 //Code here
+
+class Cat {
+  constructor(name, age, color) {
+    this.name = name;
+    this.age = age;
+    this.color = color;
+
+  }
+}
+
+let cat = {
+  name: 'Garfield',
+  age: '5',
+  color: 'orange'
+}
+
+console.log(cat.name);
+
+
+
+
 
 
 
@@ -107,6 +175,21 @@ var user = {
 */
 
 //Code here
+
+class Wizard {
+  constructor(name, age, favoriteSpell) {
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  }
+
+  castSpell() {
+    console.log(`${this.name} ${this.favoriteSpell}`);
+  }
+}
+
+let Harry = new Wizard('Harry', 16, 'abra-kadabra')
+Harry.castSpell()
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 /*
@@ -133,6 +216,27 @@ var user = {
 
 //Code Here
 
+  class Phone {
+    constructor(brand, model, storage, color, price) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false;
+  }
+    sell() {
+      this.sold = true;
+      console.log(`${this.brand} ${this.model} has been sold.`)
+    }
+
+    changePrice(newPrice) { 
+      this.price = newPrice;
+    }
+  }
+
+
+
   
 /*
     Next make three new phone instances using your class.
@@ -146,6 +250,13 @@ var user = {
 
 //Code Here
 
+let iphone = new Phone('apple', 'iphone', 512, 'red', 100);
+let galaxy = new Phone('samsung', 'galaxy', 600, 'blue', 95);
+let nokia = new Phone('nokia', 'n8', 1000, 'black', 25);
+
+
+
+
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -155,6 +266,10 @@ var user = {
 
 //Code Here 
 
+iphone.changePrice(200);
+console.log(iphone.price);
+
+
 
 /*
   Now call the sell method on one of your other phone objects
@@ -163,6 +278,8 @@ var user = {
 */
 
 //Code Here 
+
+nokia.sell();
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
@@ -182,6 +299,10 @@ const colors = {
 //do not edit this object
 
 //Code Here 
+
+
+
+
 
 
 
